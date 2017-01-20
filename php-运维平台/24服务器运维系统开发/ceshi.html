@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>usually function</title>
+	    <style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:139px;
+	top:79px;
+	width:175px;
+	height:78px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	left:95px;
+	top:143px;
+	width:234px;
+	height:107px;
+	z-index:1;
+}
+#Layer3 {
+	position:absolute;
+	left:218px;
+	top:277px;
+	width:227px;
+	height:98px;
+	z-index:2;
+}
+#Layer4 {
+	position:absolute;
+	left:612px;
+	top:355px;
+	width:84px;
+	height:103px;
+	z-index:3;
+}
+-->
+        </style>
+		 <meta http-equiv="refresh" content="2">
+</head>
+
+<div id="Layer3"></div>
+<div id="Layer4"></div>
+<div id="Layer2">
+
+<div id="Layer1">
+<script>	
+function load(){
+	//下面两种方法效果是一样的
+	document.getElementById("target").onclick();	
+}
+function test(){
+	alert("你已经stop了24-web的resin");
+	window.location.href='file-read/test/stop-24web.php';	
+}
+	</script>
+<div id="Layer5" onLoad="load()">		
+
+<button id="target" style="width:120px;height:60px;" onClick="test()">stop web</button>
+</div>
+
+</div>
+
+
+
+<html>	

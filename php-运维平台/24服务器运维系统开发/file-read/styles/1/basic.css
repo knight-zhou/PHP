@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+ul{
+	list-style-type:none;
+}
+
+h2{
+	font-size:14px;
+	background:#eee;
+	height:25px;
+	line-height:25px;
+	text-indent:10px;
+}

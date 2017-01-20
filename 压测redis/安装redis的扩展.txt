@@ -1,0 +1,16 @@
+由于我的php和httpd都是yum安装，安装扩展如下：
+wget https://github.com/nicolasff/phpredis/archive/2.2.4.tar.gz
+tar xzf 2.2.4.tar.gz 
+cd phpredis-2.2.4/
+yum install php-devel
+whereis phpize
+/usr/bin/phpize   #生成config文件
+./configure --with-php-config=/usr/bin/php-config
+make
+make install
+
+vi /etc/php.ini
+extension="redis.so
+ls /usr/lib64/php/modules/
+
+/etc/ini.d/httpd restart
